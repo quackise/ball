@@ -32,6 +32,9 @@ while running:
             grabbed = False
             vx, vy = mx - old_mx, my - old_my
 
+        elif e.type == pygame.MOUSEWHEEL:
+            r += e.y
+
     w, h = scr.get_size()
 
     old_wx, old_wy = wx, wy
